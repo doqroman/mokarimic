@@ -1,0 +1,92 @@
+%btn {
+  $size: 80px;
+  
+  border-radius: 50%;
+  width: $size; height: $size;
+  cursor: pointer;
+  user-select: none;
+
+  .hole {
+    position: relative;
+    border-radius: 50%;
+    width: $size; height: $size;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+  }
+  
+  .inner {
+    position: relative;
+    border-radius: 50%;
+    width: $size; height: $size;
+    color: rgba(255, 255, 255, .9);
+    font: 20px AvenirNext-Heavy;
+    line-height: $size;
+    text-align: center;
+    cursor: pointer;
+    transition: opacity .6s ease;
+    pointer-events: none;
+    overflow: hidden;
+    
+    &:after {
+      display: block;
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      content: "";
+      background: linear-gradient(rgba(255, 255, 255, .1), rgba(255, 255, 255, 0));
+    }
+  }
+  
+  &:hover {
+    .hole {
+      box-shadow: none;
+    }
+    
+    .inner {
+      top: 4px;
+      box-shadow: none !important;
+      
+      &:after {
+        background: rgba(255, 255, 255, 0);
+      }
+    }
+  }
+  
+  &.push {
+    .hole {
+      top: 4px;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, .25) inset;
+      overflow: hidden;
+    }
+    
+    .inner {
+      &:after {
+        background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, 0));
+      }
+    }
+  }
+  
+  &.red .inner {
+    background: $red;
+    box-shadow: 0 2px 0 #880E4F;
+  }
+  
+  &.purple .inner {
+    background: $purple;
+    box-shadow: 0 2px 0 #4A148C;
+  }
+
+  &.blue .inner {
+    background: $blue;
+    box-shadow: 0 2px 0 #01579B;
+  }
+
+  &.green .inner {
+    background: $green;
+    box-shadow: 0 2px 0 #1B5E20;
+  }
+  
+  &.yellow .inner {
+    background: $yellow;
+    box-shadow: 0 2px 0 #FF6F00;
+  }
+}

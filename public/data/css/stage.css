@@ -1,0 +1,1004 @@
+@charset "UTF-8";
+/* line 5, ../../../../../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../../../sass/_btn.scss */
+#start .btn.start {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  user-select: none;
+}
+/* line 9, ../../../sass/_btn.scss */
+#start .btn.start .hole {
+  position: relative;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+/* line 16, ../../../sass/_btn.scss */
+#start .btn.start .inner {
+  position: relative;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  color: rgba(255, 255, 255, 0.9);
+  font: 20px AvenirNext-Heavy;
+  line-height: 80px;
+  text-align: center;
+  cursor: pointer;
+  transition: opacity .6s ease;
+  pointer-events: none;
+  overflow: hidden;
+}
+/* line 29, ../../../sass/_btn.scss */
+#start .btn.start .inner:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+}
+/* line 40, ../../../sass/_btn.scss */
+#start .btn.start:hover .hole {
+  box-shadow: none;
+}
+/* line 44, ../../../sass/_btn.scss */
+#start .btn.start:hover .inner {
+  top: 4px;
+  box-shadow: none !important;
+}
+/* line 48, ../../../sass/_btn.scss */
+#start .btn.start:hover .inner:after {
+  background: rgba(255, 255, 255, 0);
+}
+/* line 55, ../../../sass/_btn.scss */
+#start .push.btn.start .hole {
+  top: 4px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) inset;
+  overflow: hidden;
+}
+/* line 62, ../../../sass/_btn.scss */
+#start .push.btn.start .inner:after {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), transparent);
+}
+/* line 68, ../../../sass/_btn.scss */
+#start .red.btn.start .inner {
+  background: #f92672;
+  box-shadow: 0 2px 0 #880E4F;
+}
+/* line 73, ../../../sass/_btn.scss */
+#start .purple.btn.start .inner {
+  background: #ae81ff;
+  box-shadow: 0 2px 0 #4A148C;
+}
+/* line 78, ../../../sass/_btn.scss */
+#start .blue.btn.start .inner {
+  background: #66d9ef;
+  box-shadow: 0 2px 0 #01579B;
+}
+/* line 83, ../../../sass/_btn.scss */
+#start .green.btn.start .inner {
+  background: #a6e22e;
+  box-shadow: 0 2px 0 #1B5E20;
+}
+/* line 88, ../../../sass/_btn.scss */
+#start .yellow.btn.start .inner {
+  background: #e6db74;
+  box-shadow: 0 2px 0 #FF6F00;
+}
+
+/* line 1, ../../../sass/_common.scss */
+html {
+  height: 100%;
+  font: 10px "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Meiryo, "メイリオ", sans-serif;
+}
+
+/* line 6, ../../../sass/_common.scss */
+body {
+  color: #f9c81e;
+  width: 100%;
+  height: 100%;
+  background: url(../img/bg.png) center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="0"] [data-section="0"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="1"] [data-section="1"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="2"] [data-section="2"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="3"] [data-section="3"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="4"] [data-section="4"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="5"] [data-section="5"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="6"] [data-section="6"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="7"] [data-section="7"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="8"] [data-section="8"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="9"] [data-section="9"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="10"] [data-section="10"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="11"] [data-section="11"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="12"] [data-section="12"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="13"] [data-section="13"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="14"] [data-section="14"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="15"] [data-section="15"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="16"] [data-section="16"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="17"] [data-section="17"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="18"] [data-section="18"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="19"] [data-section="19"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="20"] [data-section="20"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="21"] [data-section="21"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="22"] [data-section="22"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="23"] [data-section="23"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="24"] [data-section="24"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="25"] [data-section="25"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="26"] [data-section="26"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="27"] [data-section="27"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="28"] [data-section="28"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="29"] [data-section="29"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="30"] [data-section="30"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="31"] [data-section="31"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="32"] [data-section="32"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="33"] [data-section="33"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="34"] [data-section="34"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="35"] [data-section="35"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="36"] [data-section="36"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="37"] [data-section="37"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="38"] [data-section="38"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="39"] [data-section="39"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="40"] [data-section="40"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="41"] [data-section="41"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="42"] [data-section="42"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="43"] [data-section="43"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="44"] [data-section="44"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="45"] [data-section="45"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="46"] [data-section="46"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="47"] [data-section="47"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="48"] [data-section="48"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="49"] [data-section="49"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="50"] [data-section="50"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="51"] [data-section="51"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="52"] [data-section="52"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="53"] [data-section="53"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="54"] [data-section="54"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="55"] [data-section="55"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="56"] [data-section="56"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="57"] [data-section="57"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="58"] [data-section="58"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="59"] [data-section="59"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="60"] [data-section="60"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="61"] [data-section="61"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="62"] [data-section="62"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="63"] [data-section="63"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="64"] [data-section="64"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="65"] [data-section="65"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="66"] [data-section="66"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="67"] [data-section="67"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="68"] [data-section="68"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="69"] [data-section="69"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="70"] [data-section="70"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="71"] [data-section="71"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="72"] [data-section="72"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="73"] [data-section="73"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="74"] [data-section="74"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="75"] [data-section="75"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="76"] [data-section="76"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="77"] [data-section="77"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="78"] [data-section="78"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="79"] [data-section="79"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="80"] [data-section="80"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="81"] [data-section="81"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="82"] [data-section="82"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="83"] [data-section="83"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="84"] [data-section="84"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="85"] [data-section="85"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="86"] [data-section="86"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="87"] [data-section="87"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="88"] [data-section="88"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="89"] [data-section="89"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="90"] [data-section="90"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="91"] [data-section="91"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="92"] [data-section="92"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="93"] [data-section="93"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="94"] [data-section="94"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="95"] [data-section="95"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="96"] [data-section="96"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="97"] [data-section="97"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="98"] [data-section="98"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 2, ../../../sass/_section.scss */
+[data-section-index="99"] [data-section="99"] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 8, ../../../sass/_section.scss */
+.section {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: all ease-in-out .2s;
+}
+
+/* line 1, ../../../sass/_header.scss */
+#header {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  z-index: 10;
+}
+/* line 6, ../../../sass/_header.scss */
+#seats #header {
+  background: #000;
+}
+/* line 10, ../../../sass/_header.scss */
+#header #logo {
+  position: fixed;
+  top: 25px;
+  left: 50%;
+  margin-left: -155px;
+  width: 310px;
+  height: 49px;
+  background: url(../img/logo.png) center center no-repeat;
+  background-size: contain;
+  text-indent: -9999px;
+}
+/* line 19, ../../../sass/_header.scss */
+#seats #header #logo {
+  top: 0px;
+  transform: scale(0.5);
+}
+
+/* line 1, ../../../sass/_splash.scss */
+#splash {
+  background: #272822;
+}
+
+/* line 2, ../../../sass/_start.scss */
+#start .btn.start {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* line 2, ../../../sass/_main.scss */
+#main #box {
+  display: flex;
+  position: absolute;
+  top: 80px;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+}
+/* line 8, ../../../sass/_main.scss */
+#seats #main #box {
+  display: block;
+}
+/* line 13, ../../../sass/_main.scss */
+#main .amazon {
+  flex-grow: 1;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+/* line 18, ../../../sass/_main.scss */
+#seats #main .amazon {
+  margin: 10px auto;
+  width: 90%;
+  height: 100%;
+}
+/* line 22, ../../../sass/_main.scss */
+#seats #main .amazon .btnCart {
+  display: block;
+  margin: auto;
+  width: 180px;
+  height: 44px;
+  background: url(../img/btn_cart.png) center center no-repeat;
+  background-size: contain;
+}
+/* line 31, ../../../sass/_main.scss */
+#main .amazon .inner {
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 20px;
+  right: 20px;
+  margin: auto;
+  max-width: 400px;
+}
+/* line 39, ../../../sass/_main.scss */
+#main .amazon .txt {
+  font-size: 2rem;
+  text-align: center;
+}
+/* line 43, ../../../sass/_main.scss */
+#main .amazon .txt.red {
+  color: #f92672;
+}
+/* line 47, ../../../sass/_main.scss */
+#main .amazon .txt.blue {
+  color: #66d9ef;
+}
+/* line 51, ../../../sass/_main.scss */
+#main .amazon .txt.yellow {
+  color: #e6db74;
+}
+/* line 55, ../../../sass/_main.scss */
+#main .amazon .txt.green {
+  color: #a6e22e;
+}
+/* line 59, ../../../sass/_main.scss */
+#main .amazon .txt.purple {
+  color: #ae81ff;
+}
+/* line 63, ../../../sass/_main.scss */
+#main .amazon .txt.white {
+  font-weight: bold;
+  color: #f8f8f2;
+}
+/* line 69, ../../../sass/_main.scss */
+#main .amazon .img-box {
+  position: relative;
+  height: 30%;
+  border-image: url(../img/dot.png) 20 round;
+  border-style: solid;
+  border-width: 20px;
+  -webkit-filter: drop-shadow(0 0 5px #e9ba1b);
+}
+/* line 78, ../../../sass/_main.scss */
+#main .amazon .img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #f8f8f2 center center no-repeat;
+  background-size: contain;
+}
+/* line 87, ../../../sass/_main.scss */
+#main .amazon .ttl {
+  margin-top: 10px;
+  height: 58px;
+  font-size: 1.8rem;
+  overflow: hidden;
+}
+/* line 94, ../../../sass/_main.scss */
+#main .amazon .price {
+  height: 20%;
+  font-size: 2rem;
+  overflow: hidden;
+  text-align: right;
+}
+/* line 100, ../../../sass/_main.scss */
+#main .amazon .price:before {
+  content: "ー";
+  transform: scale(2, 0.8);
+  transform-origin: right center;
+}
+/* line 108, ../../../sass/_main.scss */
+#main #txt {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  height: 80px;
+  font-size: 2rem;
+  line-height: 80px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  pointer-events: none;
+}
+/* line 120, ../../../sass/_main.scss */
+#seats #main #txt {
+  position: fixed;
+  font-size: 2rem;
+  font-weight: bold;
+}
+/* line 126, ../../../sass/_main.scss */
+#main #txt:before {
+  content: "‘‘";
+}
+/* line 130, ../../../sass/_main.scss */
+#main #txt:after {
+  content: "’’";
+}
+/* line 135, ../../../sass/_main.scss */
+#main #txt:empty:before {
+  content: "";
+}
+/* line 139, ../../../sass/_main.scss */
+#main #txt:empty:after {
+  content: "";
+}
+/* line 144, ../../../sass/_main.scss */
+#main #txt .red {
+  color: #f92672;
+}
+/* line 148, ../../../sass/_main.scss */
+#main #txt .blue {
+  color: #66d9ef;
+}
+/* line 152, ../../../sass/_main.scss */
+#main #txt .yellow {
+  color: #e6db74;
+}
+/* line 156, ../../../sass/_main.scss */
+#main #txt .green {
+  color: #a6e22e;
+}
+/* line 160, ../../../sass/_main.scss */
+#main #txt .purple {
+  color: #ae81ff;
+}
+/* line 164, ../../../sass/_main.scss */
+#main #txt .white {
+  font-weight: bold;
+  color: #f8f8f2;
+}

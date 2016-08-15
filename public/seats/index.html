@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>IoT-MIC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+  <meta name="generator" content="Sublime Text 2" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="../data/css/seats.css" />
+</head>
+<body id="seats">
+  <div id="wrapper" data-section-index="0">
+    <header id="header">
+      <h1 id="logo">モーカリマイク</h1>
+    </header>
+    <div id="splash" class="section" data-section>
+    </div>
+    <div id="start" class="section" data-section>
+      <div id="btnStart" class="btn start purple">
+        <div class="hole">
+          <div class="inner">START</div>
+        </div>
+      </div>
+    </div>
+    <div id="main" class="section" data-section>
+      <div id="box"></div>
+      <marquee id="txt" scrollamount="8"></marquee>
+    </div>
+  </div>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.8/socket.io.min.js"></script>
+  <script src="../data/js/App.js"></script>
+  <script src="../data/js/App.Section.js"></script>
+  <script src="../data/js/seats.js"></script>
+</body>
+</html>
